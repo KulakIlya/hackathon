@@ -4,15 +4,90 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <load src="./partials/header.html" />
-  <main class="dialog-content">
-     <load src="./partials/dialog.html" />
+    <header class="page-header">
+      <div class="container">
+        <a href="./"
+          ><svg class="icon-logo" width="60" height="60">
+            <use href="./images/icons.svg#icon-logo"></use>
+          </svg>
+          Akka movies</a
+        >
+      </div>
+    </header>
+
+    <main class="dialog-content">
+      <section class="dialog">
+        <div class="container">
+          <div class="dialog-wrapper">
+            <div class="answer-wrapper"><p class="answer">Viva! I find what film it is.</p></div>
+            <div class="answer-wrapper">
+              <img
+                class="answer-image"
+                src="./images/placholder.png"
+                alt=""
+                width="300"
+                height="260"
+              />
+              <p>It’s <span class="bolded">“Title”</span></p>
+              <p>IMDb rating 7.5/10</p>
+              <p class="description">(опис)</p>
+            </div>
+            <div class="user-responses">
+              <button type="button" data-correct="true">Yes! It’s film that I search)</button>
+              <button type="button" data-correct="false">Nope. It’s not correct</button>
+            </div>
+          </div>
+          <!-- <div class="answer-wrapper user-answer-wrapper">
+                <p class="answer">Find me.. (весь текст)</p>
+                <img
+                  class="answer-image"
+                  src="https://placehold.jp/30x30.png"
+                  alt=""
+                  width="30"
+                  height="30"
+                />
+              </div>
+              <div class="answer-wrapper">
+                <p class="answer">Sorry, I can’t find movie by this picture</p>
+              </div>
+              <div class="user-responses">
+                <button type="button">Add more photos or explanation (внизу зявляється пошук)</button>
+                <button type="button">Nope. It’s not correct</button>
+              </div>-->
+
+          <form class="chat-form is-hidden" action="./dialog-page.html">
+            <label class="form-label file-input">
+              <input type="file" />
+              <svg class="icon-attach-file" width="30" height="30">
+                <use href="./images/icons.svg#icon-attach-file"></use>
+              </svg>
+            </label>
+            <input type="text" id="search-movie" placeholder="Search movie.." />
+            <button type="submit">
+              <svg class="icon-arrow-up" width="40" height="40">
+                <use href="./images/icons.svg#icon-arrow-up"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </section>
     </main>
-    <load src="./partials/footer.html" />
-    <script type="module" src="/main.js"></script>
-  </body>
+    <footer class="page-footer">
+      <div class="container">
+        <p class="footer-text">Hackathon project <span class="bolded">AKKA Movies</span></p>
+        <div class="copyright">
+          <ul>
+            <li>Created by Anna Kuts’</li>
+            <li>Oleksandr Sorokopud</li>
+            <li>Ilya Kulakovskiy</li>
+            <li>Maksim Pokarets</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="./js/dialog-page.js"></script>
   </body>
 </html>

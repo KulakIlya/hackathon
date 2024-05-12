@@ -51,6 +51,7 @@
     #150b3e;
 
   --secondary-background-color: #5b2393;
+  --tertiary-background-color: #430b73;
 
   --main-font-color: #ffffff;
 }
@@ -83,4 +84,9 @@ body {
 
 .bolded {
   font-weight: 700;
+}
+
+.is-hidden {
+  opacity: 0;
+  max-height: 0;
 }
