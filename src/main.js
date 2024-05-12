@@ -8,7 +8,6 @@ const dialogForm = dialogSection?.querySelector('.chat-form');
 
 dialogSection?.addEventListener('click', e => {
   showForm(e);
-  hideUserResponses(e);
 });
 
 dialogForm?.addEventListener('submit', e => {
@@ -21,6 +20,7 @@ function showForm(e) {
 
   if (closest.dataset.correct === 'false') {
     dialogForm.classList.remove('is-hidden');
+    hideUserResponses(e);
     showClarifyingMessage(e);
   }
 }
