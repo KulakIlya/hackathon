@@ -35,14 +35,19 @@
               <li><button type="button">Search movie by picture</button></li>
               <li><button type="button">Search movie by picture</button></li>
             </ul>
-            <form class="chat-form is-hidden" action="./dialog-page.html">
+            <form class="chat-form" action="./dialog-page.html" method="GET">
               <label class="form-label file-input">
-                <input type="file" />
+                <input type="file" name="file" />
                 <svg class="icon-attach-file" width="30" height="30">
                   <use href="./images/icons.svg#icon-attach-file"></use>
                 </svg>
               </label>
-              <input type="text" id="search-movie" placeholder="Search movie.." />
+              <input
+                type="text"
+                id="search-movie"
+                placeholder="Search movie.."
+                name="description"
+              />
               <button type="submit">
                 <svg class="icon-arrow-up" width="40" height="40">
                   <use href="./images/icons.svg#icon-arrow-up"></use>
