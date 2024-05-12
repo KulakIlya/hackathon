@@ -4,6 +4,8 @@
 }
 
 .dialog .container {
+  padding-top: 20px;
+
   max-width: 700px;
   max-height: 854px;
 
@@ -17,6 +19,16 @@
   background: var(--secondary-background-color);
 }
 
+.user-answer-wrapper {
+  margin-left: auto;
+  border-radius: 15px 15px 0px 15px;
+  background: var(--tertiary-background-color);
+}
+
+.user-answer-wrapper .answer-image {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
 .answer-wrapper:not(:first-child) {
   margin-top: 15px;
 }
@@ -41,6 +53,12 @@
 
   display: flex;
   gap: 20px;
+
+  transition: all 250ms ease-in-out;
+}
+
+.user-responses.is-hidden {
+  margin: 0;
 }
 
 .user-responses button {

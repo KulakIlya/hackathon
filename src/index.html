@@ -8,11 +8,66 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <load src="./partials/header.html" />
+    <header class="page-header">
+      <div class="container">
+        <a href="./"
+          ><svg class="icon-logo" width="60" height="60">
+            <use href="./images/icons.svg#icon-logo"></use>
+          </svg>
+          Akka movies</a
+        >
+      </div>
+    </header>
+
     <main>
-      <load src="./partials/chat.html" />
+      <section class="chat-section">
+        <div class="container">
+          <div class="intro">
+            <svg class="icon-logo" width="120" height="120">
+              <use href="./images/icons.svg#icon-logo"></use>
+            </svg>
+            <h1>Hi! I’m Akka.</h1>
+            <p class="text">I can help you to find movie by text explanation, photo or video</p>
+          </div>
+          <div class="requests">
+            <ul class="requests-list">
+              <li><button type="button">Search movie by picture</button></li>
+              <li><button type="button">Search movie by picture</button></li>
+              <li><button type="button">Search movie by picture</button></li>
+            </ul>
+          </div>
+
+          <form class="chat-form is-hidden" action="./dialog-page.html">
+            <label class="form-label file-input">
+              <input type="file" />
+              <svg class="icon-attach-file" width="30" height="30">
+                <use href="./images/icons.svg#icon-attach-file"></use>
+              </svg>
+            </label>
+            <input type="text" id="search-movie" placeholder="Search movie.." />
+            <button type="submit">
+              <svg class="icon-arrow-up" width="40" height="40">
+                <use href="./images/icons.svg#icon-arrow-up"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </section>
     </main>
-    <load src="./partials/footer.html" />
-    <script type="module" src="/main.js"></script>
+    <footer class="page-footer">
+      <div class="container">
+        <p class="footer-text">Hackathon project <span class="bolded">AKKA Movies</span></p>
+        <div class="copyright">
+          <ul>
+            <li>Created by Anna Kuts’</li>
+            <li>Oleksandr Sorokopud</li>
+            <li>Ilya Kulakovskiy</li>
+            <li>Maksim Pokarets</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="./js/intro-page.js"></script>
   </body>
 </html>
